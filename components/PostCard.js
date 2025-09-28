@@ -12,13 +12,13 @@ export default function PostCard({ post }) {
 
             <div className="flex gap-2">
                 <Link
-                    href=""
+                    href={`/posts/${post.id}`}
                     className="bg-blue-500 text-white px-4 py-2 rounded hover:b-blue-600 transition-colors text-sm"
                 >
                     View Details
                 </Link>
                 <Link
-                    href=""
+                    href={`/posts/${post.id}/edit`}
                     className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors text-sm"
                 >
                     Edit
