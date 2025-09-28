@@ -1,3 +1,4 @@
+import DeleteButton from "@/components/DeleteButton";
 import { fetchPost } from "@/lib/api";
 import Link from "next/link";
 
@@ -62,9 +63,7 @@ export default async function PostDetailPage({ params }) {
                     </Link>
 
                     {/* Delete Button */}
-                    <Link href=''>
-                        Delete
-                    </Link>
+                    <DeleteButton postId={post.id} />
                 </footer>
             </article>
         </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import DeleteButton from "./DeleteButton";
 
 export default function PostCard({ post }) {
     return (
@@ -23,12 +24,8 @@ export default function PostCard({ post }) {
                 >
                     Edit
                 </Link>
-                <Link
-                    href=""
-                    className="bg-red-500 text-white px-4 py-2 rounded hover:bg-green-600 transition-colors text-sm"
-                >
-                    Delete
-                </Link>
+                
+                <DeleteButton postId={post.id} />
             </div>
         </div>
     );
